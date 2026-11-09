@@ -1,0 +1,28 @@
+[project]
+name = "content-creator-agents"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "devpdhana", email = "devpdhanasekar@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "ddgs>=9.16.1",
+    "fastapi>=0.162.1",
+    "httpx>=0.28.1",
+    "langchain>=1.4.9",
+    "langchain-nvidia-ai-endpoints>=1.5.0",
+    "langgraph>=1.2.20",
+    "python-dotenv>=1.2.4",
+    "pytrends>=4.9.2",
+]
+
+[project.scripts]
+content-creator-agents = "content_creator_agents:main"
+
+[build-system]
+requires = ["uv_build>=0.12.23,<0.13.0"]
+build-backend = "uv_build"
+[tool.uv]
+package = false
